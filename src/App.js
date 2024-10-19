@@ -1,9 +1,11 @@
-import './App.css';
+import { Inbox } from './Pages/Inbox';
+import { Navbar } from './Pages/Navbar';
 
 function App() {
   return (
-    <div className="App">
-     <h1>email</h1>
+    <div className="App"> 
+     <Navbar />
+     <Inbox />
     </div>
   );
 }
