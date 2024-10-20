@@ -37,6 +37,7 @@ export const EmailProvider = ({children}) => {
     }
 
     const unreadEmails = emails.filter(({id}) => !readEmails.map(({id}) => id).includes(id));
+    
     const setFilteredMail = (filter) => {
       if( filter === 'Inbox' || filter === 'Unread'){
         filter === "Inbox" ? setFilterEmail(emails) : setFilterEmail(unreadEmails)
